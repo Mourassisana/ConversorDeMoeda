@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+/* Colors */
+    --primary-color: #1ABC9C;
+    --secondary-color: #ff1b7b;
+    --text-color: #f6f6f6;
+    --secondary-text-color: #1e1e1e;
+
+/* Font Styles */
+    --primary-font: 'Space Grotesk', sans-serif;
+    --secondary-font: 'Orbitron', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: linear-gradient(135deg, #1ABC9C, #ff1b7b);
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin-top: auto;
+}
+
+/* Estilo do conteúdo */
+.content {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-weight: 450;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Estilo da caixinha do formulário */
+.converter {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Estilizando os labels ("De", "Para", "Valor") */
+.converter label {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs e Selects */
+.converter select,
+.converter input {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+.converter button {
+    background-color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.converter button:hover {
+    background: var(--primary-color);
+}
+
+/* Footer fixo no fim da página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
